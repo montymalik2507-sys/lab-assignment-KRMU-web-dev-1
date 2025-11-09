@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+    }
+
+    header {
+      background-color: rgb(31, 88, 6);
+      color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 35 px;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      background: lightgray;
+      width: 60%;
+    }
+
+    th {
+      background-color: YELLOW;
+      color: BLACK;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #0f96d1;
+    }
+
+    .project-box {
+      margin: 15px auto;
+      padding: 15px;
+      width: 60%;
+      background: yellowgreen;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      text-align: center;
+    }
+
+    .contact-table td {
+      padding: 10px;
+    }
+
+    button {
+      background-color: RED;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: GREEN;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 0;
+      text-decoration: none;
+      color: BLACK;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color:  rgb(31, 88, 6);
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MY PORTFOLIO</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <img src="/miine.jpg" alt="Profile Photo" width="200" height="200" style="border-radius: 50%; border: 2px solid rgba(225, 62, 21, 0.765);">
+    <p>Hello! I am HITESH. I am learning web development, and this is my first portfolio website.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Learning</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-box">
+      <b>Project 1</b>
+      <p>A simple HTML & CSS webpage</p>
+    </div>
+    <div class="project-box">
+      <b>Project 2</b>
+      <p>Shopping page layout</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <table class="contact-table" align="center">
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td><textarea placeholder="Enter your message"></textarea></td>
+        </tr>
+      </table>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <a href="#top" class="back">Back to Top</a>
+
+  <footer>
+    <p>&copy; 2025 Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
